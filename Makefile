@@ -15,4 +15,4 @@ clean:
 life: $(TARGET) life.py
 	python life.py
 life.py:
-	curl -O http://svn.python.org/projects/python/branches/dmalcolm-ast-optimization-branch/Demo/curses/life.py
+	curl -O https://hg.python.org/cpython/raw-file/1cae77f873af/Tools/demo/life.py
