@@ -6,6 +6,12 @@ Python3.4.x (for running life.py)
 VisualStudio 2010 or later (for compile)
 Cygwin (for make, curl, patch)
 
+### how to build
+make .. build _curses.pyd (for Python3.4 / win64)
+make life .. run the life game using Python-Curses
+
+![life game](life.png)
+
 ## notes
 PDCursesのWIN実装はsetuptermが必ず失敗するのでコメントアウトしてあります。(modify.patch)
 
