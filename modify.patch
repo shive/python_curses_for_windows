@@ -1,0 +1,33 @@
+--- Python-3.4.2/Modules/_cursesmodule.c.0	2014-10-08 17:18:14.000000000 +0900
++++ Python-3.4.2/Modules/_cursesmodule.c	2015-07-14 08:35:37.326699700 +0900
+@@ -2597,18 +2597,18 @@
+         }
+     }
+ 
+-    if (!initialised_setupterm && setupterm(termstr,fd,&err) == ERR) {
+-        char* s = "setupterm: unknown error";
+-
+-        if (err == 0) {
+-            s = "setupterm: could not find terminal";
+-        } else if (err == -1) {
+-            s = "setupterm: could not find terminfo database";
+-        }
+-
+-        PyErr_SetString(PyCursesError,s);
+-        return NULL;
+-    }
++    // if (!initialised_setupterm && setupterm(termstr,fd,&err) == ERR) {
++    //     char* s = "setupterm: unknown error";
++    // 
++    //     if (err == 0) {
++    //         s = "setupterm: could not find terminal";
++    //     } else if (err == -1) {
++    //         s = "setupterm: could not find terminfo database";
++    //     }
++    // 
++    //     PyErr_SetString(PyCursesError,s);
++    //     return NULL;
++    // }
+ 
+     initialised_setupterm = TRUE;
+ 

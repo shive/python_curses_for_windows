@@ -1,0 +1,5 @@
+obj/
+Python-*/
+PDCurses-*/
+_curses.pyd
+life.py
